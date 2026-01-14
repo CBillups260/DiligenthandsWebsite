@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Groovy",
     role: "Master Barber",
-    image: "/images/Groovy.png",
+    image: "/images/New Photos/Groovy.png",
     cuts: [
       "Groovy Cuts 2026-01-11 at 4.51.44 PM.png",
       "Groovy Cuts 2026-01-11 at 4.52.15 PM.png",
@@ -18,13 +18,13 @@ const teamMembers = [
       "Groovy Cuts 2026-01-11 at 4.54.34 PM.png",
       "Groovy Cuts 2026-01-11 at 4.54.55 PM.png",
       "Groovy Cuts 2026-01-11 at 4.55.13 PM.png",
-      "Groovy Men unit cut.png"
+      "New Photos/New hair unit photo.png"
     ]
   },
   {
     name: "Larmont",
     role: "Master Barber",
-    image: "/images/Larmont.png",
+    image: "/images/New Photos/Larmont.png",
     cuts: [
       "Larmont Cuts 2026-01-11 at 4.57.59 PM.png",
       "Larmont Cuts 2026-01-11 at 4.58.09 PM.png",
@@ -40,7 +40,7 @@ const teamMembers = [
   {
     name: "Saul",
     role: "Master Barber",
-    image: "/images/Saul.png",
+    image: "/images/New Photos/Saul.png",
     cuts: [
       "Saul Cuts 2026-01-11 at 5.02.09 PM.png",
       "Saul Cuts 2026-01-11 at 5.02.22 PM.png",
@@ -56,7 +56,7 @@ const teamMembers = [
   {
     name: "Norie",
     role: "Master Barber",
-    image: "/images/Norie.png",
+    image: "/images/New Photos/Norie.png",
     cuts: [
       "Norie Cuts 2026-01-11 at 5.05.18 PM.png",
       "Norie Cuts 2026-01-11 at 5.05.26 PM.png",
@@ -71,7 +71,7 @@ const teamMembers = [
   {
     name: "Ace",
     role: "Master Barber",
-    image: "/images/Ace.png",
+    image: "/images/New Photos/Ace.png",
     cuts: [
       "Ace Cuts 2026-01-11 at 5.08.36 PM.png",
       "Ace Cuts 2026-01-11 at 5.08.46 PM.png",
@@ -87,7 +87,7 @@ const teamMembers = [
   {
     name: "Alejandro",
     role: "Master Barber",
-    image: "/images/Alejandro.png",
+    image: "/images/New Photos/Alejandro.png",
     cuts: []
   }
 ];

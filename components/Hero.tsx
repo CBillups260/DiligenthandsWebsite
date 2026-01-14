@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/herbg.png" 
+          src="/images/New Photos/New Hero Section Bg.png" 
           alt="Luxury Grooming" 
           className="w-full h-full object-cover brightness-[0.4]"
         />

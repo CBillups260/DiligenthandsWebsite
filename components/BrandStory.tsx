@@ -51,7 +51,7 @@ const BrandStory: React.FC = () => {
             <div key={member.name} className="group relative">
               <div className="aspect-[4/5] bg-neutral-900 overflow-hidden relative mb-4">
                 <img 
-                  src={`/images/${member.name}.png`} 
+                  src={`/images/New Photos/${member.name}.png`} 
                   alt={member.name}
                   className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
                   onError={(e) => {
@@ -87,7 +87,7 @@ const BrandStory: React.FC = () => {
               "Larmont Cuts 2026-01-11 at 4.58.09 PM.png",
               "Norie Cuts 2026-01-11 at 5.06.32 PM.png",
               "Saul Cuts 2026-01-11 at 5.03.19 PM.png",
-              "Groovy Men unit cut.png",
+              "New Photos/New hair unit photo.png",
               // Repeat for loop
               "Ace Cuts 2026-01-11 at 5.08.36 PM.png",
               "Groovy Cuts 2026-01-11 at 4.51.44 PM.png",
@@ -104,7 +104,7 @@ const BrandStory: React.FC = () => {
               "Larmont Cuts 2026-01-11 at 4.58.09 PM.png",
               "Norie Cuts 2026-01-11 at 5.06.32 PM.png",
               "Saul Cuts 2026-01-11 at 5.03.19 PM.png",
-              "Groovy Men unit cut.png"
+              "New Photos/New hair unit photo.png"
             ].map((img, index) => (
               <div key={index} className="mx-4 w-[280px] md:w-[400px] flex-shrink-0 relative aspect-[4/5] overflow-hidden group">
                 <img 

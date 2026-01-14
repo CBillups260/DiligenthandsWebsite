@@ -19,7 +19,7 @@ const categories = [
   },
   {
     title: "Mens Hair Units",
-    image: "/images/Groovy Men unit cut.png",
+    image: "/images/New Photos/New hair unit photo.png",
     desc: "Premium non-surgical hair replacement solutions for a natural, restored look."
   }
 ];
