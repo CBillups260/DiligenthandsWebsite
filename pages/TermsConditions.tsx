@@ -54,13 +54,6 @@ const TermsConditions: React.FC = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-oswald text-white uppercase tracking-wider mb-4">Memberships</h2>
-              <p>
-                Memberships are billed monthly and provide specific benefits as outlined at the time of purchase. Memberships can be cancelled at any time with 30 days written notice. Membership benefits are non-transferable and may not be combined with other offers unless specified.
-              </p>
-            </div>
-
-            <div>
               <h2 className="text-2xl font-oswald text-white uppercase tracking-wider mb-4">User Conduct</h2>
               <p>
                 You agree to use our services only for lawful purposes and in a manner that does not infringe the rights of, or restrict the use and enjoyment of our services by, any third party. Respectful behavior is expected at all times in our lounge.

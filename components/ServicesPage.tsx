@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Clock, Star, Scissors, Sparkles, Crown } from 'lucide-react';
+import { Clock, Star, Scissors, Sparkles } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
 
 interface Service {
@@ -115,13 +115,6 @@ const ServicesPage: React.FC = () => {
               <span>All Services</span>
             </a>
             <a 
-              href="#diligence-package"
-              className="flex items-center gap-2 px-3 py-2 text-[10px] md:text-xs uppercase tracking-[0.2em] font-oswald text-gray-400 hover:text-[#C5A059] transition-colors group whitespace-nowrap"
-            >
-              <Crown size={14} className="text-[#C5A059] opacity-50 group-hover:opacity-100 transition-opacity" />
-              <span>The Diligence Package</span>
-            </a>
-            <a 
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -202,64 +195,6 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* The Diligence Package - Featured */}
-      <section id="diligence-package" className="py-24 bg-[#050505] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#C5A059]/20 to-transparent"></div>
-        </div>
-        
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-12">
-            <p className="text-[#C5A059] font-oswald uppercase tracking-[0.4em] text-sm mb-4">Signature Experience</p>
-            <h2 className="text-4xl md:text-[70px] font-heading leading-[0.95] tracking-tight mb-6">
-              The Diligence Package
-            </h2>
-          </div>
-
-          <div className="bg-white/[0.03] border-2 border-[#C5A059] p-8 md:p-12 relative max-w-2xl mx-auto">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C5A059] text-black px-6 py-2 text-xs font-oswald uppercase tracking-widest">
-              Ultimate Experience
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-[#C5A059]/10 border border-[#C5A059]/30 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Crown size={32} className="text-[#C5A059]" />
-              </div>
-              
-              <h3 className="text-3xl md:text-4xl font-oswald uppercase tracking-wider mb-4 text-[#C5A059]">
-                The Complete Transformation
-              </h3>
-              
-              <p className="text-gray-400 leading-relaxed mb-8 max-w-lg mx-auto">
-                Our signature package combines our best services for the ultimate grooming experience. 
-                Perfect for special occasions or when you want to treat yourself to the very best. 
-                Includes haircut, beard grooming, facial treatment, and premium styling.
-              </p>
-              
-              <div className="flex flex-col items-center gap-2 mb-8">
-                <div className="flex items-center gap-3 text-gray-500">
-                  <Clock size={18} />
-                  <span className="font-oswald tracking-wider">1 hour 30 minutes</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center gap-4 mb-8">
-                <span className="text-6xl font-oswald text-[#C5A059]">$120</span>
-              </div>
-              
-              <a 
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#C5A059] text-black px-12 py-4 font-oswald uppercase tracking-[0.2em] hover:bg-white transition-all text-center"
-              >
-                Book The Diligence Package
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Price Summary */}
       <section className="py-24 bg-[#0a0a0a] border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6">
@@ -278,7 +213,6 @@ const ServicesPage: React.FC = () => {
               { name: "Men's Haircut w/ Design", duration: "45 min", price: "$55" },
               { name: "Haircut w/ Larger Design", duration: "1 hour", price: "$65" },
               { name: "Transformation Haircut", duration: "1 hr 30 min", price: "$80" },
-              { name: "The Diligence Package", duration: "1 hr 30 min", price: "$120", featured: true },
               { name: "Hair Wash", duration: "15 min", price: "$20" },
               { name: "Relaxing Facial", duration: "30 min", price: "$30" },
             ].map((item, index) => (

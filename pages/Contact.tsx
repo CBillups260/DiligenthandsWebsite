@@ -88,9 +88,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-oswald uppercase tracking-widest text-sm mb-2 text-[#C5A059]">Hours</h3>
                     <p className="text-gray-400 font-light">
-                      Mon - Fri: 9:00 AM - 7:00 PM<br />
-                      Sat: 8:00 AM - 5:00 PM<br />
-                      Sun: Closed
+                      Sun & Mon: Appointment Only<br />
+                      Tue, Wed & Fri: 10:00 AM - 6:00 PM<br />
+                      Thu: 10:00 AM - 4:00 PM<br />
+                      Sat: 9:00 AM - 4:00 PM
                     </p>
                   </div>
                 </div>
@@ -128,7 +129,6 @@ const Contact: React.FC = () => {
                   <select className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:border-[#C5A059] transition-colors outline-none font-light appearance-none">
                     <option>General Inquiry</option>
                     <option>Group Booking</option>
-                    <option>Membership Question</option>
                     <option>Feedback</option>
                   </select>
                 </div>

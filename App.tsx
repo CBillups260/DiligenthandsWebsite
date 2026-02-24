@@ -7,12 +7,12 @@ import AIAssistant from './components/AIAssistant';
 import HomePage from './components/HomePage';
 import ServicesPage from './components/ServicesPage';
 import TeamPage from './components/TeamPage';
-import Memberships from './components/Memberships';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import ReviewsPage from './components/ReviewsPage';
+import SMPServices from './pages/SMPServices';
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -44,9 +44,9 @@ const AppContent: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/smp" element={<SMPServices />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
-          <Route path="/memberships" element={<Memberships />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

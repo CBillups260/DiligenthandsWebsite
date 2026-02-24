@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
           <nav className="hidden lg:flex items-center space-x-8 text-[11px] uppercase tracking-[0.2em] font-medium">
             <Link to="/" className={navLinkClass('/')}>Home</Link>
             <Link to="/services" className={navLinkClass('/services')}>Services</Link>
+            <Link to="/smp" className={navLinkClass('/smp')}>SMP</Link>
             <Link to="/team" className={navLinkClass('/team')}>Team</Link>
             <Link to="/faq" className={navLinkClass('/faq')}>FAQ</Link>
           </nav>
@@ -42,7 +43,6 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
             <nav className="hidden lg:flex items-center space-x-8 text-[11px] uppercase tracking-[0.2em] font-medium">
               <Link to="/reviews" className={navLinkClass('/reviews')}>Reviews</Link>
               <Link to="/contact" className={navLinkClass('/contact')}>Contact</Link>
-              <Link to="/memberships" className={navLinkClass('/memberships')}>Memberships</Link>
             </nav>
             <button 
               className="lg:hidden text-white hover:text-[#C5A059] transition-colors"
@@ -72,6 +72,13 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
             Services
           </Link>
           <Link 
+            to="/smp" 
+            className={`text-2xl font-oswald uppercase tracking-widest ${isActive('/smp') ? 'text-[#C5A059]' : 'text-white'} hover:text-[#C5A059] transition-colors`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            SMP
+          </Link>
+          <Link 
             to="/team" 
             className={`text-2xl font-oswald uppercase tracking-widest ${isActive('/team') ? 'text-[#C5A059]' : 'text-white'} hover:text-[#C5A059] transition-colors`}
             onClick={() => setMobileMenuOpen(false)}
@@ -98,13 +105,6 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact
-          </Link>
-          <Link 
-            to="/memberships" 
-            className={`text-2xl font-oswald uppercase tracking-widest ${isActive('/memberships') ? 'text-[#C5A059]' : 'text-white'} hover:text-[#C5A059] transition-colors`}
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Memberships
           </Link>
           <a 
             href={BOOKING_URL}

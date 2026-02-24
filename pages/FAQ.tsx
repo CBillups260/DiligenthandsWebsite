@@ -71,23 +71,6 @@ const faqData: FAQItem[] = [
     answer: "Yes! Gift cards are available in any denomination and can be purchased online or at any Diligent Hands location. They make perfect gifts for the distinguished gentleman in your life."
   },
   
-  // Memberships
-  {
-    category: "Memberships",
-    question: "What are the benefits of membership?",
-    answer: "Members enjoy exclusive perks including discounted services (up to 20% off), priority booking, complimentary add-ons, exclusive product samples, member-only events, and a free birthday service each year."
-  },
-  {
-    category: "Memberships",
-    question: "How much does membership cost?",
-    answer: "We offer several membership tiers starting at $49/month for our Essential plan up to $149/month for our Executive plan. Each tier includes a set number of services and escalating benefits."
-  },
-  {
-    category: "Memberships",
-    question: "Can I cancel my membership anytime?",
-    answer: "Yes, memberships can be cancelled anytime with 30 days notice. There are no long-term contracts or cancellation fees. We believe in earning your loyalty every visit."
-  },
-  
   // General
   {
     category: "General",

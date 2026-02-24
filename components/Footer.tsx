@@ -21,10 +21,8 @@ const Footer: React.FC = () => {
             <Link to="/services" className="hover:text-[#C5A059] transition-colors">Services</Link>
             <Link to="/team" className="hover:text-[#C5A059] transition-colors">Team</Link>
             <Link to="/contact" className="hover:text-[#C5A059] transition-colors">Contact</Link>
-            <Link to="/memberships" className="hover:text-[#C5A059] transition-colors">Memberships</Link>
             <Link to="/faq" className="hover:text-[#C5A059] transition-colors">FAQ</Link>
             <a href="#" className="hover:text-[#C5A059] transition-colors">Careers</a>
-            <a href="#" className="hover:text-[#C5A059] transition-colors">Franchise</a>
             <a 
               href={BOOKING_URL}
               target="_blank"
@@ -54,6 +52,23 @@ const Footer: React.FC = () => {
             >
               <Instagram size={20} />
             </a>
+          </div>
+
+          <div className="text-center text-gray-500 text-xs tracking-wide mb-8">
+            <h4 className="font-oswald uppercase tracking-[0.2em] text-[10px] text-[#C5A059] mb-3">Shop Hours</h4>
+            <p className="leading-relaxed">
+              Sun & Mon: Appointment Only<br />
+              Tue, Wed & Fri: 10:00 AM - 6:00 PM<br />
+              Thu: 10:00 AM - 4:00 PM<br />
+              Sat: 9:00 AM - 4:00 PM
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 text-gray-500 text-xs tracking-wide mb-8">
+            <a href="mailto:diligenthandsfw@gmail.com" className="hover:text-[#C5A059] transition-colors">
+              diligenthandsfw@gmail.com
+            </a>
+            <span className="text-[#C5A059] font-oswald uppercase tracking-[0.2em] text-[10px]">6+ Expert Barbers</span>
           </div>
         </div>
 
