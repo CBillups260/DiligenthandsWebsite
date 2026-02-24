@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Clock, Star, Scissors, Sparkles } from 'lucide-react';
+import { Clock, Star, Scissors, Sparkles, Crown, ArrowRight } from 'lucide-react';
 import { BOOKING_URL } from '../constants';
 
 interface Service {
@@ -115,6 +115,13 @@ const ServicesPage: React.FC = () => {
               <span>All Services</span>
             </a>
             <a 
+              href="#mens-units"
+              className="flex items-center gap-2 px-3 py-2 text-[10px] md:text-xs uppercase tracking-[0.2em] font-oswald text-gray-400 hover:text-[#C5A059] transition-colors group whitespace-nowrap"
+            >
+              <Crown size={14} className="text-[#C5A059] opacity-50 group-hover:opacity-100 transition-opacity" />
+              <span>Men's Units</span>
+            </a>
+            <a 
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -195,6 +202,83 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Featured: Men's Hair Units */}
+      <section id="mens-units" className="py-24 bg-[#050505] border-t border-[#C5A059]/20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C5A059]/[0.03] via-transparent to-transparent pointer-events-none"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-[#C5A059]"></div>
+            <Crown size={20} className="text-[#C5A059]" />
+            <p className="text-[#C5A059] font-oswald uppercase tracking-[0.4em] text-xs md:text-sm">Featured Service</p>
+            <Crown size={20} className="text-[#C5A059]" />
+            <div className="h-[1px] w-16 bg-gradient-to-l from-transparent to-[#C5A059]"></div>
+          </div>
+          
+          <h2 className="text-4xl md:text-[70px] font-heading text-center mb-6 leading-[0.95] tracking-tight">
+            Men's Hair Units
+          </h2>
+          <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16 leading-relaxed">
+            Regain your confidence with our premium, non-surgical hair replacement service. 
+            Our team expertly applies custom hair pieces that blend seamlessly with your natural hair 
+            for a full, natural look.
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#C5A059]/30 to-[#C5A059]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/images/IMG_3624.PNG" 
+                  alt="Men's Hair Unit - Before and After Transformation" 
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+              </div>
+              <div className="flex justify-center gap-8 mt-4">
+                <span className="text-gray-500 font-oswald uppercase tracking-[0.3em] text-xs">Before</span>
+                <span className="text-[#C5A059] font-oswald uppercase tracking-[0.3em] text-xs">After</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl md:text-3xl font-heading mb-6">
+                A Full Head of Hair, <br />
+                <span className="text-[#C5A059]">Without Surgery</span>
+              </h3>
+              
+              <div className="space-y-6 mb-10">
+                {[
+                  { title: 'Custom Fit', desc: 'Each hair piece is measured and tailored specifically to your head shape and balding pattern for a seamless, undetectable result.' },
+                  { title: 'Expert Application', desc: 'Our trained team carefully prepares the area and applies the unit with precision, blending it naturally with your existing hair.' },
+                  { title: 'Natural Look', desc: 'Premium-quality hair pieces matched to your natural color, texture, and density so no one will know the difference.' },
+                  { title: 'Ongoing Support', desc: 'We provide maintenance services to keep your unit looking fresh, including adjustments, reattachment, and styling.' },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4">
+                    <div className="w-8 h-8 shrink-0 bg-[#C5A059]/10 border border-[#C5A059]/30 flex items-center justify-center mt-0.5">
+                      <span className="text-[#C5A059] font-oswald text-sm">{String(i + 1).padStart(2, '0')}</span>
+                    </div>
+                    <div>
+                      <h4 className="font-oswald uppercase tracking-wider text-white mb-1">{item.title}</h4>
+                      <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <a 
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 border-2 border-[#C5A059] px-10 py-4 font-oswald uppercase tracking-[0.3em] text-sm text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition-all duration-300 self-start"
+              >
+                <span>Book Consultation</span>
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Price Summary */}
       <section className="py-24 bg-[#0a0a0a] border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6">
@@ -215,6 +299,7 @@ const ServicesPage: React.FC = () => {
               { name: "Transformation Haircut", duration: "1 hr 30 min", price: "$80" },
               { name: "Hair Wash", duration: "15 min", price: "$20" },
               { name: "Relaxing Facial", duration: "30 min", price: "$30" },
+              { name: "Men's Hair Unit", duration: "Consultation", price: "Varies", featured: true },
             ].map((item, index) => (
               <div 
                 key={index} 
