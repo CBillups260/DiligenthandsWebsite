@@ -86,7 +86,7 @@ const teamMembers = [
   },
   {
     name: "Alyssa",
-    role: "Barber/Cosmetologist",
+    role: "Master Barber/Cosmetologist",
     image: "/images/New Photos/Alyssa.png",
     cuts: [
       "Alyssa/IMG_8484.png",
@@ -98,7 +98,7 @@ const teamMembers = [
   },
   {
     name: "Scotty",
-    role: "Master Barber in Training",
+    role: "Master Barber",
     image: "/images/New Photos/Scotty.png",
     cuts: [
       "Scotty/IMG_4492.png",

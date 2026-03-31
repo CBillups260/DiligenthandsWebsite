@@ -30,8 +30,8 @@ const teamMembers = [
   { name: "Saul", role: "Master Barber" },
   { name: "Norie", role: "Master Barber" },
   { name: "Ace", role: "Master Barber" },
-  { name: "Alyssa", role: "Barber/Cosmetologist" },
-  { name: "Scotty", role: "Master Barber in Training" },
+  { name: "Alyssa", role: "Master Barber/Cosmetologist" },
+  { name: "Scotty", role: "Master Barber" },
   { name: "Alejandro", role: "Master Barber in Training" }
 ];
 

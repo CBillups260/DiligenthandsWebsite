@@ -64,7 +64,7 @@ const allServices: Service[] = [
     popular: true
   },
   { 
-    name: 'Hair Wash', 
+    name: 'Shampoo', 
     description: "A refreshing scalp massage and cleansing treatment. Perfect as an add-on or standalone refresh between cuts.", 
     duration: '15 min', 
     price: '$20' 
@@ -297,7 +297,7 @@ const ServicesPage: React.FC = () => {
               { name: "Men's Haircut w/ Design", duration: "45 min", price: "$55" },
               { name: "Haircut w/ Larger Design", duration: "1 hour", price: "$65" },
               { name: "Transformation Haircut", duration: "1 hr 30 min", price: "$80" },
-              { name: "Hair Wash", duration: "15 min", price: "$20" },
+              { name: "Shampoo", duration: "15 min", price: "$20" },
               { name: "Relaxing Facial", duration: "30 min", price: "$30" },
               { name: "Men's Hair Unit", duration: "Consultation", price: "Varies", featured: true },
             ].map((item, index) => (
