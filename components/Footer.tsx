@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             <a href="mailto:diligenthandsfw@gmail.com" className="hover:text-[#C5A059] transition-colors">
               diligenthandsfw@gmail.com
             </a>
-            <span className="text-[#C5A059] font-oswald uppercase tracking-[0.2em] text-[10px]">6+ Expert Barbers</span>
+            <span className="text-[#C5A059] font-oswald uppercase tracking-[0.2em] text-[10px]">7 Expert Barbers</span>
           </div>
         </div>
 
