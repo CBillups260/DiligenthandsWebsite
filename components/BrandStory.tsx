@@ -32,7 +32,7 @@ const teamMembers = [
   { name: "Ace", role: "Master Barber" },
   { name: "Alyssa", role: "Barber/Cosmetologist" },
   { name: "Scotty", role: "Master Barber in Training" },
-  { name: "Alejandro", role: "Master Barber" }
+  { name: "Alejandro", role: "Master Barber in Training" }
 ];
 
 const BrandStory: React.FC = () => {

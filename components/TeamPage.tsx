@@ -112,7 +112,7 @@ const teamMembers = [
   },
   {
     name: "Alejandro",
-    role: "Master Barber",
+    role: "Master Barber in Training",
     image: "/images/New Photos/Alejandro.png",
     cuts: [
       "Alejandro/654237737_870366049364852_6352182931121172074_n.png",
