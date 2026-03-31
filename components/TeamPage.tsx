@@ -85,10 +85,41 @@ const teamMembers = [
     ]
   },
   {
+    name: "Alyssa",
+    role: "Barber/Cosmetologist",
+    image: "/images/New Photos/Alyssa.png",
+    cuts: [
+      "Alyssa/IMG_8484.png",
+      "Alyssa/IMG_8510.png",
+      "Alyssa/IMG_8526.png",
+      "Alyssa/IMG_8558.png",
+      "Alyssa/IMG_8571.png"
+    ]
+  },
+  {
+    name: "Scotty",
+    role: "Master Barber in Training",
+    image: "/images/New Photos/Scotty.png",
+    cuts: [
+      "Scotty/IMG_4492.png",
+      "Scotty/IMG_4497.png",
+      "Scotty/IMG_4508.png",
+      "Scotty/IMG_4513.png",
+      "Scotty/IMG_4528.png",
+      "Scotty/IMG_4550.png",
+      "Scotty/IMG_4559.png"
+    ]
+  },
+  {
     name: "Alejandro",
     role: "Master Barber",
     image: "/images/New Photos/Alejandro.png",
-    cuts: []
+    cuts: [
+      "Alejandro/654237737_870366049364852_6352182931121172074_n.png",
+      "Alejandro/654671388_870535676014556_6501544471430806039_n.png",
+      "Alejandro/656030635_874230328978424_1932110894662924743_n.png",
+      "Alejandro/656133287_870535709347886_5624947852827325003_n.png"
+    ]
   }
 ];
 
@@ -104,10 +135,10 @@ const TeamPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 md:mb-24">
           <h2 className="text-5xl md:text-8xl font-heading text-[#C5A059] mb-6 opacity-0 animate-fade-in-up">
-            Our Master Barbers
+            Our Team
           </h2>
           <p className="text-gray-400 font-light text-lg md:text-xl max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
-            Meet the craftsmen behind the excellence. Each member of our team brings years of experience and a unique artistic vision to every cut.
+            Meet the artists behind the excellence. Each member of our team brings years of experience and a unique artistic vision to every client.
           </p>
         </div>
 
