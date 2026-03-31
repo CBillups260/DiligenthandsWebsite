@@ -235,7 +235,7 @@ const stats = [
   { value: "5.0", label: "Google Rating" },
   { value: "100+", label: "5-Star Reviews" },
   { value: "100%", label: "Would Recommend" },
-  { value: "5+", label: "Expert Barbers" }
+  { value: "7", label: "Expert Barbers" }
 ];
 
 // Generate initials for avatar
