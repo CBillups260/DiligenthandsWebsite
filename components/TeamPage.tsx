@@ -70,7 +70,7 @@ const teamMembers = [
   },
   {
     name: "Ace",
-    role: "Master Barber",
+    role: "Master Barber/SMP Artist",
     image: "/images/New Photos/Ace.png",
     cuts: [
       "Ace Cuts 2026-01-11 at 5.08.36\u202FPM.png",
@@ -115,10 +115,10 @@ const teamMembers = [
     role: "Master Barber in Training",
     image: "/images/New Photos/Alejandro.png",
     cuts: [
-      "Alejandro/654237737_870366049364852_6352182931121172074_n.png",
-      "Alejandro/654671388_870535676014556_6501544471430806039_n.png",
-      "Alejandro/656030635_874230328978424_1932110894662924743_n.png",
-      "Alejandro/656133287_870535709347886_5624947852827325003_n.png"
+      "Alejandros New Cuts /IMG_2402.jpeg",
+      "Alejandros New Cuts /IMG_2554.jpeg",
+      "Alejandros New Cuts /IMG_2613.jpeg",
+      "Alejandros New Cuts /IMG_3412.jpeg"
     ]
   }
 ];
