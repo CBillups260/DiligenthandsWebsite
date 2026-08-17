@@ -109,17 +109,6 @@ const teamMembers = [
       "Scotty/IMG_4550.png",
       "Scotty/IMG_4559.png"
     ]
-  },
-  {
-    name: "Alejandro",
-    role: "Master Barber in Training",
-    image: "/images/New Photos/Alejandro.png",
-    cuts: [
-      "Alejandros New Cuts /IMG_2402.jpeg",
-      "Alejandros New Cuts /IMG_2554.jpeg",
-      "Alejandros New Cuts /IMG_2613.jpeg",
-      "Alejandros New Cuts /IMG_3412.jpeg"
-    ]
   }
 ];
 
