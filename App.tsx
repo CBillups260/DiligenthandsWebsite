@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import ReviewsPage from './components/ReviewsPage';
 import SMPServices from './pages/SMPServices';
+import Awards from './pages/Awards';
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -47,6 +48,7 @@ const AppContent: React.FC = () => {
           <Route path="/smp" element={<SMPServices />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/awards" element={<Awards />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

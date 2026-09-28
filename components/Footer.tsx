@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
             <Link to="/services" className="hover:text-[#C5A059] transition-colors">Services</Link>
             <Link to="/team" className="hover:text-[#C5A059] transition-colors">Team</Link>
             <Link to="/contact" className="hover:text-[#C5A059] transition-colors">Contact</Link>
+            <Link to="/awards" className="hover:text-[#C5A059] transition-colors">Awards</Link>
             <Link to="/faq" className="hover:text-[#C5A059] transition-colors">FAQ</Link>
             <a href="#" className="hover:text-[#C5A059] transition-colors">Careers</a>
             <a 

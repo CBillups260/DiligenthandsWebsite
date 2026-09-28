@@ -41,6 +41,7 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
           {/* Right Nav */}
           <div className="flex items-center space-x-4 md:space-x-8">
             <nav className="hidden lg:flex items-center space-x-8 text-[11px] uppercase tracking-[0.2em] font-medium">
+              <Link to="/awards" className={navLinkClass('/awards')}>Awards</Link>
               <Link to="/reviews" className={navLinkClass('/reviews')}>Reviews</Link>
               <Link to="/contact" className={navLinkClass('/contact')}>Contact</Link>
             </nav>
@@ -91,6 +92,13 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
             onClick={() => setMobileMenuOpen(false)}
           >
             FAQ
+          </Link>
+          <Link 
+            to="/awards" 
+            className={`text-2xl font-oswald uppercase tracking-widest ${isActive('/awards') ? 'text-[#C5A059]' : 'text-white'} hover:text-[#C5A059] transition-colors`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Awards
           </Link>
           <Link 
             to="/reviews" 
