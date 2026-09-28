@@ -17,12 +17,12 @@ const faqData: FAQItem[] = [
   {
     category: "Appointments",
     question: "How do I book an appointment?",
-    answer: "Booking is easy! Use our website's Book Now button, download our mobile app, or call your nearest Diligent Hands location directly."
+    answer: "Booking is easy! Use the Book Now button anywhere on our site to reserve online, or call the shop directly at (260) 755-2656."
   },
   {
     category: "Services",
     question: "What services do you offer?",
-    answer: "We offer a complete range of men's grooming services including precision haircuts, hot towel shaves, beard sculpting, and more."
+    answer: "Men's and kids' haircuts, beard grooming, custom hair designs, transformation cuts, shampoo service, and relaxing facials. We also offer Men's Hair Units and Scalp Micropigmentation by consultation."
   },
   {
     category: "Payments",

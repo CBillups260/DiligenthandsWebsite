@@ -14,83 +14,88 @@ const faqData: FAQItem[] = [
   {
     category: "Appointments & Booking",
     question: "Do I need an appointment?",
-    answer: "While we accept walk-ins based on availability, we highly recommend booking an appointment to ensure you get your preferred time slot and barber. You can easily book through our website or mobile app."
+    answer: "While we accept walk-ins based on availability, we highly recommend booking an appointment to ensure you get your preferred time slot and barber. You can book online anytime using the Book Now button on our site."
   },
   {
     category: "Appointments & Booking",
     question: "How do I book an appointment?",
-    answer: "Booking is easy! Use our website's Book Now button, download our mobile app, or call your nearest Diligent Hands location directly. You can select your preferred service, barber, date, and time."
+    answer: "Booking is easy! Use the Book Now button anywhere on our site to reserve online, or call the shop directly at (260) 755-2656. You can choose your service, barber, date, and time."
+  },
+  {
+    category: "Appointments & Booking",
+    question: "What are your hours?",
+    answer: "Tuesday, Wednesday, and Friday: 10:00 AM to 6:00 PM. Thursday: 10:00 AM to 4:00 PM. Saturday: 9:00 AM to 4:00 PM. Sunday and Monday are by appointment only."
   },
   {
     category: "Appointments & Booking",
     question: "What is your cancellation policy?",
-    answer: "We require at least 4 hours notice for cancellations or rescheduling. Late cancellations or no-shows may result in a fee equal to 50% of the service cost. We understand emergencies happen—just give us a call."
+    answer: "We require at least 4 hours notice for cancellations or rescheduling. Late cancellations or no-shows may result in a fee equal to 50% of the service cost. We understand emergencies happen\u2014just give us a call."
   },
   {
     category: "Appointments & Booking",
     question: "Can I request a specific barber?",
     answer: "Absolutely! When booking, you can select your preferred barber from our team. If they're not available at your desired time, we'll suggest alternatives or different time slots."
   },
-  
+
   // Services
   {
     category: "Services",
     question: "What services do you offer?",
-    answer: "We offer a complete range of men's grooming services including precision haircuts, hot towel shaves, beard sculpting and maintenance, hair color and gray blending, scalp treatments, hand and foot grooming, and facial treatments. Every service includes a complimentary beverage."
+    answer: "Men's haircuts, kids' cuts, haircuts paired with beard grooming, custom hair designs, transformation cuts, standalone beard grooming, shampoo service, and relaxing facials. We also offer Men's Hair Units and Scalp Micropigmentation (SMP) by consultation."
   },
   {
     category: "Services",
     question: "How long does a typical haircut take?",
-    answer: "A signature haircut at Diligent Hands takes approximately 45 minutes to an hour. This includes consultation, shampoo, precision cut, styling, and finishing touches. We never rush—your experience matters."
+    answer: "A men's haircut runs about 30 minutes. A haircut with beard grooming or a custom design takes around 45 minutes, and a larger design or transformation cut can run an hour to an hour and a half. We never rush\u2014your experience matters."
   },
   {
     category: "Services",
     question: "Do you offer beard services?",
-    answer: "Yes! Our beard services are among our most popular offerings. From full beard sculpting and maintenance to hot towel straight razor lineups, our barbers are experts in facial hair artistry."
+    answer: "Yes! Beard grooming is one of our most popular services. Book it on its own, or pair it with a haircut in a single session. Our barbers handle shaping, trimming, conditioning, and clean lineups."
   },
   {
     category: "Services",
-    question: "What's included in the 'Total Man Care' package?",
-    answer: "Our signature Total Man Care package includes a precision haircut, hot towel shave or beard grooming, scalp treatment, hand grooming, and a relaxing shoulder massage. It's the ultimate head-to-toe grooming experience."
+    question: "Do you offer hair replacement or scalp micropigmentation?",
+    answer: "Yes. We offer Men's Hair Units\u2014custom-fit hair pieces matched to your head shape, color, texture, and density\u2014and Scalp Micropigmentation (SMP) with our SMP artist, Ace. Both begin with a consultation, and pricing depends on your goals. Visit our SMP and Services pages for details."
   },
-  
+
   // Pricing & Payment
   {
     category: "Pricing & Payment",
     question: "What are your prices?",
-    answer: "Our services range from $35 for a classic cut to $200+ for our comprehensive packages. Prices vary by location and service complexity. Visit our Services page or contact your local shop for detailed pricing."
+    answer: "A men's haircut is $40, kids' cuts (12 and under) are $30, and our college student rate is $35. Beard grooming and relaxing facials are $30 each, and a shampoo service is $20. Haircut with beard grooming is $50, custom designs run $55 to $65, and a transformation haircut is $80. Hair Units and SMP are quoted at consultation. Full pricing is on our Services page."
   },
   {
     category: "Pricing & Payment",
     question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, debit cards, Apple Pay, Google Pay, and cash. Gift cards purchased online or in-store are also welcome."
+    answer: "We accept all major credit cards, debit cards, Apple Pay, Google Pay, and cash. Gift cards are also welcome."
   },
   {
     category: "Pricing & Payment",
     question: "Do you offer gift cards?",
-    answer: "Yes! Gift cards are available in any denomination and can be purchased online or at any Diligent Hands location. They make perfect gifts for the distinguished gentleman in your life."
+    answer: "Yes! Gift cards are available and make a perfect gift for the distinguished gentleman in your life. Ask us in the shop or give us a call at (260) 755-2656."
   },
-  
+
   // General
   {
     category: "General",
+    question: "Where are you located?",
+    answer: "We're at 5525 Coldwater Rd, Fort Wayne, IN 46825. Call us at (260) 755-2656 or reach out through our Contact page."
+  },
+  {
+    category: "General",
     question: "What should I expect on my first visit?",
-    answer: "Your first visit begins with a consultation where your barber will discuss your style preferences, hair type, and grooming goals. Enjoy a complimentary beverage while you experience our signature service. Plan to arrive 10 minutes early to complete a brief profile."
+    answer: "Your first visit begins with a consultation where your barber will discuss your style preferences, hair type, and grooming goals. Plan to arrive about 10 minutes early so we can get you checked in without cutting into your chair time."
   },
   {
     category: "General",
     question: "Is there parking available?",
-    answer: "Most Diligent Hands locations offer free parking for guests. Some urban locations provide validated parking at nearby garages. Check your specific location's page for parking details."
-  },
-  {
-    category: "General",
-    question: "Do you serve beverages?",
-    answer: "Every service includes a complimentary beverage from our bar—coffee, tea, water, or soft drinks. Select locations also offer premium beverages including craft beers and whiskey for guests 21+."
+    answer: "Yes, there is free parking available on site at our Coldwater Road location."
   },
   {
     category: "General",
     question: "What products do you use and sell?",
-    answer: "We use and sell premium men's grooming products including our own Diligent Hands line, along with carefully curated brands. Our barbers can recommend the perfect products for your hair type and style goals."
+    answer: "We use and sell premium men's grooming products from carefully curated brands. Our barbers can recommend the right products for your hair type and style goals."
   }
 ];
 
