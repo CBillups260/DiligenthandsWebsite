@@ -8,11 +8,15 @@ const Hero: React.FC = () => {
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/New Photos/New Hero Section Bg.png" 
-          alt="Luxury Grooming" 
-          className="w-full h-full object-cover brightness-[0.4]"
-        />
+        <picture className="block w-full h-full">
+          {/* Portrait crop so the team stays in frame on phones */}
+          <source media="(max-width: 767px)" srcSet="/images/team-hero-bg-mobile.jpg" />
+          <img
+            src="/images/team-hero-bg.jpg"
+            alt="The Diligent Hands Barber Lounge team in the shop"
+            className="w-full h-full object-cover brightness-[0.4]"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black"></div>
       </div>
 
