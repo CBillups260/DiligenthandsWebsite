@@ -6,8 +6,8 @@ import ImageLightbox from './ImageLightbox';
 const teamMembers = [
   {
     name: "Groovy",
-    role: "Master Barber",
-    image: "/images/New Photos/Groovy.png",
+    role: "Owner / Master Barber",
+    image: "/images/team/groovy.jpg",
     cuts: [
       "Groovy New cut images/IMG_3609.JPG",
       "Groovy New cut images/IMG_3610.JPG",
@@ -24,7 +24,7 @@ const teamMembers = [
   {
     name: "Larmont",
     role: "Master Barber",
-    image: "/images/New Photos/Larmont.png",
+    image: "/images/team/larmont.jpg",
     cuts: [
       "Larmont Cuts 2026-01-11 at 4.57.59\u202FPM.png",
       "Larmont Cuts 2026-01-11 at 4.58.09\u202FPM.png",
@@ -40,7 +40,7 @@ const teamMembers = [
   {
     name: "Saul",
     role: "Master Barber",
-    image: "/images/New Photos/Saul.png",
+    image: "/images/team/saul.jpg",
     cuts: [
       "Saul Cuts 2026-01-11 at 5.02.09\u202FPM.png",
       "Saul Cuts 2026-01-11 at 5.02.22\u202FPM.png",
@@ -56,7 +56,7 @@ const teamMembers = [
   {
     name: "Norie",
     role: "Master Barber",
-    image: "/images/New Photos/Norie.png",
+    image: "/images/team/norie.jpg",
     cuts: [
       "Norie Cuts 2026-01-11 at 5.05.18\u202FPM.png",
       "Norie Cuts 2026-01-11 at 5.05.26\u202FPM.png",
@@ -71,7 +71,7 @@ const teamMembers = [
   {
     name: "Ace",
     role: "Master Barber/SMP Artist",
-    image: "/images/New Photos/Ace.png",
+    image: "/images/team/ace.jpg",
     cuts: [
       "Ace Cuts 2026-01-11 at 5.08.36\u202FPM.png",
       "Ace Cuts 2026-01-11 at 5.08.46\u202FPM.png",
@@ -87,7 +87,7 @@ const teamMembers = [
   {
     name: "Alyssa",
     role: "Master Barber/Cosmetologist",
-    image: "/images/New Photos/Alyssa.png",
+    image: "/images/team/alyssa.jpg",
     cuts: [
       "Alyssa/IMG_8484.png",
       "Alyssa/IMG_8510.png",
@@ -99,7 +99,7 @@ const teamMembers = [
   {
     name: "Scotty",
     role: "Master Barber",
-    image: "/images/New Photos/Scotty.png",
+    image: "/images/team/scotty.jpg",
     cuts: [
       "Scotty/IMG_4492.png",
       "Scotty/IMG_4497.png",
@@ -108,6 +108,17 @@ const teamMembers = [
       "Scotty/IMG_4528.png",
       "Scotty/IMG_4550.png",
       "Scotty/IMG_4559.png"
+    ]
+  },
+  {
+    name: "Tyrone",
+    role: "Master Barber",
+    image: "/images/team/tyrone.jpg",
+    cuts: [
+      "team/tyrone/work-1.jpg",
+      "team/tyrone/work-2.jpg",
+      "team/tyrone/work-3.jpg",
+      "team/tyrone/work-4.jpg"
     ]
   }
 ];

@@ -25,13 +25,14 @@ const marqueeImages = [
 const allMarqueeImages = [...marqueeImages, ...marqueeImages];
 
 const teamMembers = [
-  { name: "Groovy", role: "Master Barber" },
-  { name: "Larmont", role: "Master Barber" },
-  { name: "Saul", role: "Master Barber" },
-  { name: "Norie", role: "Master Barber" },
-  { name: "Ace", role: "Master Barber/SMP Artist" },
-  { name: "Alyssa", role: "Master Barber/Cosmetologist" },
-  { name: "Scotty", role: "Master Barber" }
+  { name: "Groovy", role: "Owner / Master Barber", image: "/images/team/groovy.jpg" },
+  { name: "Larmont", role: "Master Barber", image: "/images/team/larmont.jpg" },
+  { name: "Saul", role: "Master Barber", image: "/images/team/saul.jpg" },
+  { name: "Norie", role: "Master Barber", image: "/images/team/norie.jpg" },
+  { name: "Ace", role: "Master Barber/SMP Artist", image: "/images/team/ace.jpg" },
+  { name: "Alyssa", role: "Master Barber/Cosmetologist", image: "/images/team/alyssa.jpg" },
+  { name: "Scotty", role: "Master Barber", image: "/images/team/scotty.jpg" },
+  { name: "Tyrone", role: "Master Barber", image: "/images/team/tyrone.jpg" }
 ];
 
 const BrandStory: React.FC = () => {
@@ -87,11 +88,11 @@ const BrandStory: React.FC = () => {
             <div
               key={member.name}
               className="group relative cursor-pointer"
-              onClick={() => openLightbox([`/images/New Photos/${member.name}.png`], 0)}
+              onClick={() => openLightbox([member.image], 0)}
             >
               <div className="aspect-[4/5] bg-neutral-900 overflow-hidden relative mb-4">
                 <img 
-                  src={`/images/New Photos/${member.name}.png`} 
+                  src={member.image} 
                   alt={member.name}
                   className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
                   onError={(e) => {
