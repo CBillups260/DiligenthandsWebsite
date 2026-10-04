@@ -86,7 +86,9 @@ const SMPServices: React.FC = () => {
       <section className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/IMG_3606.jpg"
+                  loading="lazy"
+                  decoding="async"
+            src="/images/img-3606.webp"
             alt="Scalp Micropigmentation"
             className="w-full h-full object-cover brightness-[0.25]"
           />
@@ -177,10 +179,12 @@ const SMPServices: React.FC = () => {
           <div className="mb-16">
             <div
               className="relative group overflow-hidden border border-white/10 hover:border-[#C5A059]/30 transition-all duration-500 cursor-pointer"
-              onClick={() => setLightbox({ images: ["/images/Scalp%20Micropigmentation%20Services/IMG_3620.PNG"], index: 0 })}
+              onClick={() => setLightbox({ images: ["/images/scalp-micropigmentation-services/img-3620.webp"], index: 0 })}
             >
               <img
-                src="/images/Scalp%20Micropigmentation%20Services/IMG_3620.PNG"
+                  loading="lazy"
+                  decoding="async"
+                src="/images/scalp-micropigmentation-services/img-3620.webp"
                 alt="SMP Before and After Results"
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
               />

@@ -270,7 +270,9 @@ const ReviewsPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative min-h-[60vh] md:min-h-[70vh] w-full flex items-center justify-center overflow-hidden pt-32">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
+                  loading="lazy"
+                  decoding="async" 
             src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=2070&auto=format&fit=crop" 
             alt="Reviews" 
             className="w-full h-full object-cover brightness-[0.3]"

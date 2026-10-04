@@ -6,119 +6,127 @@ import ImageLightbox from './ImageLightbox';
 const teamMembers = [
   {
     name: "Groovy",
+    slug: "groovy",
     role: "Owner / Master Barber",
-    image: "/images/team/groovy.jpg",
+    image: "/images/team/groovy.webp",
     cuts: [
-      "Groovy New cut images/IMG_3609.JPG",
-      "Groovy New cut images/IMG_3610.JPG",
-      "Groovy New cut images/IMG_3611.JPG",
-      "Groovy New cut images/IMG_3612.JPG",
-      "Groovy New cut images/IMG_3613.JPG",
-      "Groovy New cut images/IMG_3614.JPG",
-      "Groovy New cut images/IMG_3615.JPG",
-      "Groovy New cut images/IMG_3616.JPG",
-      "Groovy New cut images/IMG_3617.JPG",
-      "Groovy New cut images/IMG_3618.JPG"
+      "groovy-new-cut-images/img-3609.webp",
+      "groovy-new-cut-images/img-3610.webp",
+      "groovy-new-cut-images/img-3611.webp",
+      "groovy-new-cut-images/img-3612.webp",
+      "groovy-new-cut-images/img-3613.webp",
+      "groovy-new-cut-images/img-3614.webp",
+      "groovy-new-cut-images/img-3615.webp",
+      "groovy-new-cut-images/img-3616.webp",
+      "groovy-new-cut-images/img-3617.webp",
+      "groovy-new-cut-images/img-3618.webp"
     ]
   },
   {
     name: "Larmont",
+    slug: "larmont",
     role: "Master Barber",
-    image: "/images/team/larmont.jpg",
+    image: "/images/team/larmont.webp",
     cuts: [
-      "Larmont Cuts 2026-01-11 at 4.57.59\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.58.09\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.58.39\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.58.55\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.59.22\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.59.34\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.59.45\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 4.59.55\u202FPM.png",
-      "Larmont Cuts 2026-01-11 at 5.00.15\u202FPM.png"
+      "larmont-cuts-2026-01-11-at-4-57-59-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-58-09-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-58-39-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-58-55-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-59-22-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-59-34-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-59-45-pm.webp",
+      "larmont-cuts-2026-01-11-at-4-59-55-pm.webp",
+      "larmont-cuts-2026-01-11-at-5-00-15-pm.webp"
     ]
   },
   {
     name: "Saul",
+    slug: "saul",
     role: "Master Barber",
-    image: "/images/team/saul.jpg",
+    image: "/images/team/saul.webp",
     cuts: [
-      "Saul Cuts 2026-01-11 at 5.02.09\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.02.22\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.02.33\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.02.51\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.03.19\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.03.33\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.03.46\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.04.03\u202FPM.png",
-      "Saul Cuts 2026-01-11 at 5.04.15\u202FPM.png"
+      "saul-cuts-2026-01-11-at-5-02-09-pm.webp",
+      "saul-cuts-2026-01-11-at-5-02-22-pm.webp",
+      "saul-cuts-2026-01-11-at-5-02-33-pm.webp",
+      "saul-cuts-2026-01-11-at-5-02-51-pm.webp",
+      "saul-cuts-2026-01-11-at-5-03-19-pm.webp",
+      "saul-cuts-2026-01-11-at-5-03-33-pm.webp",
+      "saul-cuts-2026-01-11-at-5-03-46-pm.webp",
+      "saul-cuts-2026-01-11-at-5-04-03-pm.webp",
+      "saul-cuts-2026-01-11-at-5-04-15-pm.webp"
     ]
   },
   {
     name: "Norie",
+    slug: "norie",
     role: "Master Barber",
-    image: "/images/team/norie.jpg",
+    image: "/images/team/norie.webp",
     cuts: [
-      "Norie Cuts 2026-01-11 at 5.05.18\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.05.26\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.05.51\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.06.01\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.06.32\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.06.41\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.06.53\u202FPM.png",
-      "Norie Cuts 2026-01-11 at 5.07.04\u202FPM.png"
+      "norie-cuts-2026-01-11-at-5-05-18-pm.webp",
+      "norie-cuts-2026-01-11-at-5-05-26-pm.webp",
+      "norie-cuts-2026-01-11-at-5-05-51-pm.webp",
+      "norie-cuts-2026-01-11-at-5-06-01-pm.webp",
+      "norie-cuts-2026-01-11-at-5-06-32-pm.webp",
+      "norie-cuts-2026-01-11-at-5-06-41-pm.webp",
+      "norie-cuts-2026-01-11-at-5-06-53-pm.webp",
+      "norie-cuts-2026-01-11-at-5-07-04-pm.webp"
     ]
   },
   {
     name: "Ace",
+    slug: "ace",
     role: "Master Barber/SMP Artist",
-    image: "/images/team/ace.jpg",
+    image: "/images/team/ace.webp",
     cuts: [
-      "Ace Cuts 2026-01-11 at 5.08.36\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.08.46\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.08.53\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.09.00\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.09.07\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.09.21\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.09.40\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.09.50\u202FPM.png",
-      "Ace Cuts 2026-01-11 at 5.10.04\u202FPM.png"
+      "ace-cuts-2026-01-11-at-5-08-36-pm.webp",
+      "ace-cuts-2026-01-11-at-5-08-46-pm.webp",
+      "ace-cuts-2026-01-11-at-5-08-53-pm.webp",
+      "ace-cuts-2026-01-11-at-5-09-00-pm.webp",
+      "ace-cuts-2026-01-11-at-5-09-07-pm.webp",
+      "ace-cuts-2026-01-11-at-5-09-21-pm.webp",
+      "ace-cuts-2026-01-11-at-5-09-40-pm.webp",
+      "ace-cuts-2026-01-11-at-5-09-50-pm.webp",
+      "ace-cuts-2026-01-11-at-5-10-04-pm.webp"
     ]
   },
   {
     name: "Alyssa",
+    slug: "alyssa",
     role: "Master Barber/Cosmetologist",
-    image: "/images/team/alyssa.jpg",
+    image: "/images/team/alyssa.webp",
     cuts: [
-      "Alyssa/IMG_8484.png",
-      "Alyssa/IMG_8510.png",
-      "Alyssa/IMG_8526.png",
-      "Alyssa/IMG_8558.png",
-      "Alyssa/IMG_8571.png"
+      "alyssa/img-8484.webp",
+      "alyssa/img-8510.webp",
+      "alyssa/img-8526.webp",
+      "alyssa/img-8558.webp",
+      "alyssa/img-8571.webp"
     ]
   },
   {
     name: "Scotty",
+    slug: "scotty",
     role: "Master Barber",
-    image: "/images/team/scotty.jpg",
+    image: "/images/team/scotty.webp",
     cuts: [
-      "Scotty/IMG_4492.png",
-      "Scotty/IMG_4497.png",
-      "Scotty/IMG_4508.png",
-      "Scotty/IMG_4513.png",
-      "Scotty/IMG_4528.png",
-      "Scotty/IMG_4550.png",
-      "Scotty/IMG_4559.png"
+      "scotty/img-4492.webp",
+      "scotty/img-4497.webp",
+      "scotty/img-4508.webp",
+      "scotty/img-4513.webp",
+      "scotty/img-4528.webp",
+      "scotty/img-4550.webp",
+      "scotty/img-4559.webp"
     ]
   },
   {
     name: "Tyrone",
+    slug: "tyrone",
     role: "Master Barber",
-    image: "/images/team/tyrone.jpg",
+    image: "/images/team/tyrone.webp",
     cuts: [
-      "team/tyrone/work-1.jpg",
-      "team/tyrone/work-2.jpg",
-      "team/tyrone/work-3.jpg",
-      "team/tyrone/work-4.jpg"
+      "team-tyrone/work-1.webp",
+      "team-tyrone/work-2.webp",
+      "team-tyrone/work-3.webp",
+      "team-tyrone/work-4.webp"
     ]
   }
 ];
@@ -146,7 +154,7 @@ const TeamPage: React.FC = () => {
           {teamMembers.map((member, index) => {
             const fullImagePaths = member.cuts.map(cut => `/images/${cut}`);
             return (
-              <div key={member.name} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-start`}>
+              <div id={member.slug} key={member.name} className={`scroll-mt-28 md:scroll-mt-32 flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-start`}>
                 {/* Profile Section */}
                 <div className="w-full lg:w-1/3 lg:sticky lg:top-32">
                   <div 
@@ -191,7 +199,9 @@ const TeamPage: React.FC = () => {
                           className="aspect-square bg-neutral-900 overflow-hidden relative group cursor-pointer"
                           onClick={() => openLightbox(fullImagePaths, cutIndex)}
                         >
-                          <img 
+                          <img
+                  loading="lazy"
+                  decoding="async" 
                             src={`/images/${cut}`} 
                             alt={`${member.name} style`}
                             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"

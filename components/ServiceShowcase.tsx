@@ -4,22 +4,22 @@ import React from 'react';
 const categories = [
   {
     title: "Hair Care For Men",
-    image: "/images/Barbershop view.png",
+    image: "/images/barbershop-view.webp",
     desc: "More than just haircuts. We offer precision cuts, grey camouflage, and scalp treatments designed for men."
   },
   {
     title: "Beard Care For Men",
-    image: "/images/Beard grooming_.png",
+    image: "/images/beard-grooming.webp",
     desc: "Whether it's a trim or a full transformation, we treat your facial hair with the respect it deserves."
   },
   {
     title: "Facials For Men",
-    image: "/images/Facial men.png",
+    image: "/images/facial-men.webp",
     desc: "Unwind with our soothing facial treatment. Cleansing, exfoliation, and hydration leave your skin revitalized."
   },
   {
     title: "Mens Hair Units",
-    image: "/images/New Photos/New hair unit photo.png",
+    image: "/images/new-photos/new-hair-unit-photo.webp",
     desc: "Premium non-surgical hair replacement solutions for a natural, restored look."
   }
 ];
@@ -41,7 +41,9 @@ const ServiceShowcase: React.FC = () => {
                 <div className="flex-1 h-[1px] bg-gradient-to-r from-white/40 to-transparent"></div>
               </div>
               <div className="relative overflow-hidden aspect-[16/10] mb-6">
-                <img 
+                <img
+                  loading="lazy"
+                  decoding="async" 
                   src={cat.image} 
                   alt={cat.title} 
                   className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"

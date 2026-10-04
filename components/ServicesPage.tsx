@@ -83,8 +83,10 @@ const ServicesPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/Beard grooming_.png" 
+          <img
+                  loading="lazy"
+                  decoding="async" 
+            src="/images/beard-grooming.webp" 
             alt="Premium Services" 
             className="w-full h-full object-cover brightness-[0.3]"
           />
@@ -140,8 +142,10 @@ const ServicesPage: React.FC = () => {
           {/* Section Header */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div className="relative overflow-hidden aspect-[16/10] group">
-              <img 
-                src="/images/Barbershop view.png" 
+              <img
+                  loading="lazy"
+                  decoding="async" 
+                src="/images/barbershop-view.webp" 
                 alt="Haircuts & Grooming" 
                 className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
               />
@@ -228,8 +232,10 @@ const ServicesPage: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#C5A059]/30 to-[#C5A059]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative overflow-hidden">
-                <img 
-                  src="/images/IMG_3624.PNG" 
+                <img
+                  loading="lazy"
+                  decoding="async" 
+                  src="/images/img-3624.webp" 
                   alt="Men's Hair Unit - Before and After Transformation" 
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />

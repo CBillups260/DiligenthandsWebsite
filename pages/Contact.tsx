@@ -9,8 +9,10 @@ const Contact: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/Barbershop view.png" 
+          <img
+                  loading="lazy"
+                  decoding="async" 
+            src="/images/barbershop-view.webp" 
             alt="Diligent Hands Barbershop View" 
             className="w-full h-full object-cover brightness-[0.3]"
           />

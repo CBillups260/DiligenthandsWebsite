@@ -10,9 +10,12 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <picture className="block w-full h-full">
           {/* Portrait crop so the team stays in frame on phones */}
-          <source media="(max-width: 767px)" srcSet="/images/team-hero-bg-mobile.jpg" />
+          <source media="(max-width: 767px)" srcSet="/images/team-hero-bg-mobile.webp" />
           <img
-            src="/images/team-hero-bg.jpg"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+            src="/images/team-hero-bg.webp"
             alt="The Diligent Hands Barber Lounge team in the shop"
             className="w-full h-full object-cover brightness-[0.4]"
           />

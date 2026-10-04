@@ -25,7 +25,7 @@ const awards: Award[] = [
     location: 'Fort Wayne, Indiana',
     issuer: 'BusinessRate',
     basis: 'Google All-Time Reviews • July 2025',
-    image: '/images/Awards/businessrate-2025-plaque.png',
+    image: '/images/awards/businessrate-2025-plaque.webp',
     description:
       "Ranked the number one barber shop in Fort Wayne. This one wasn't voted on by a panel or bought with an ad spend—it came straight from the all-time Google reviews our clients left us, chair by chair, cut by cut."
   }
@@ -40,7 +40,9 @@ const Awards: React.FC = () => {
       <section className="relative h-[55vh] md:h-[65vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/Barbershop view.png"
+                  loading="lazy"
+                  decoding="async"
+            src="/images/barbershop-view.webp"
             alt="Diligent Hands Barber Lounge"
             className="w-full h-full object-cover brightness-[0.25]"
           />
@@ -72,6 +74,8 @@ const Awards: React.FC = () => {
             {/* Plaque */}
             <div className="relative">
               <img
+                  loading="lazy"
+                  decoding="async"
                 src={featured.image}
                 alt={`${featured.title} ${featured.year} — ${featured.rank} in ${featured.location}`}
                 className="w-full max-w-lg mx-auto drop-shadow-[0_20px_50px_rgba(197,160,89,0.15)]"

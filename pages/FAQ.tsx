@@ -118,8 +118,10 @@ const FAQ: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/Facial men.png" 
+          <img
+                  loading="lazy"
+                  decoding="async" 
+            src="/images/facial-men.webp" 
             alt="Relaxing Facial Treatment" 
             className="w-full h-full object-cover brightness-[0.3]"
           />

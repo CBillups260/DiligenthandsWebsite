@@ -82,7 +82,9 @@ const Memberships: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
+                  loading="lazy"
+                  decoding="async" 
             src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=2070&auto=format&fit=crop" 
             alt="Diligent Hands Luxury Membership" 
             className="w-full h-full object-cover brightness-[0.25]"
@@ -207,7 +209,9 @@ const Memberships: React.FC = () => {
 
       {/* Full Width Image Section */}
       <section className="relative h-[60vh] w-full overflow-hidden group">
-        <img 
+        <img
+                  loading="lazy"
+                  decoding="async" 
           src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=2070&auto=format&fit=crop" 
           alt="VIP Experience" 
           className="w-full h-full object-cover brightness-[0.4] grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110"

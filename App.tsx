@@ -16,12 +16,29 @@ import SMPServices from './pages/SMPServices';
 import Awards from './pages/Awards';
 
 const ScrollToTop: React.FC = () => {
-  const { pathname } = useLocation();
-  
+  const { pathname, hash } = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    // Let the destination page paint before scrolling to the anchor.
+    const id = decodeURIComponent(hash.slice(1));
+    let frame = 0;
+    let tries = 0;
+    const findAndScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (tries++ < 20) {
+        frame = requestAnimationFrame(findAndScroll);
+      }
+    };
+    frame = requestAnimationFrame(findAndScroll);
+    return () => cancelAnimationFrame(frame);
+  }, [pathname, hash]);
+
   return null;
 };
 

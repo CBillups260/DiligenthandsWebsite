@@ -64,6 +64,8 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({ images, currentIndex, onC
         onClick={(e) => e.stopPropagation()}
       >
         <img
+                  loading="eager"
+                  decoding="async"
           src={images[currentIndex]}
           alt=""
           className="max-w-full max-h-[85vh] object-contain rounded-sm shadow-2xl"

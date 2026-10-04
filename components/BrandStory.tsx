@@ -1,38 +1,39 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BOOKING_URL } from '../constants';
 import ImageLightbox from './ImageLightbox';
 
 const marqueeImages = [
-  "Ace Cuts 2026-01-11 at 5.08.36\u202FPM.png",
-  "Groovy New cut images/IMG_3609.JPG",
-  "Larmont Cuts 2026-01-11 at 4.57.59\u202FPM.png",
-  "Norie Cuts 2026-01-11 at 5.05.18\u202FPM.png",
-  "Saul Cuts 2026-01-11 at 5.02.09\u202FPM.png",
-  "Ace Cuts 2026-01-11 at 5.09.40\u202FPM.png",
-  "Groovy New cut images/IMG_3612.JPG",
-  "Larmont Cuts 2026-01-11 at 5.00.15\u202FPM.png",
-  "Norie Cuts 2026-01-11 at 5.07.04\u202FPM.png",
-  "Saul Cuts 2026-01-11 at 5.04.15\u202FPM.png",
-  "Ace Cuts 2026-01-11 at 5.10.04\u202FPM.png",
-  "Groovy New cut images/IMG_3615.JPG",
-  "Larmont Cuts 2026-01-11 at 4.58.09\u202FPM.png",
-  "Norie Cuts 2026-01-11 at 5.06.32\u202FPM.png",
-  "Saul Cuts 2026-01-11 at 5.03.19\u202FPM.png",
-  "New Photos/New hair unit photo.png"
+  "ace-cuts-2026-01-11-at-5-08-36-pm.webp",
+  "groovy-new-cut-images/img-3609.webp",
+  "larmont-cuts-2026-01-11-at-4-57-59-pm.webp",
+  "norie-cuts-2026-01-11-at-5-05-18-pm.webp",
+  "saul-cuts-2026-01-11-at-5-02-09-pm.webp",
+  "ace-cuts-2026-01-11-at-5-09-40-pm.webp",
+  "groovy-new-cut-images/img-3612.webp",
+  "larmont-cuts-2026-01-11-at-5-00-15-pm.webp",
+  "norie-cuts-2026-01-11-at-5-07-04-pm.webp",
+  "saul-cuts-2026-01-11-at-5-04-15-pm.webp",
+  "ace-cuts-2026-01-11-at-5-10-04-pm.webp",
+  "groovy-new-cut-images/img-3615.webp",
+  "larmont-cuts-2026-01-11-at-4-58-09-pm.webp",
+  "norie-cuts-2026-01-11-at-5-06-32-pm.webp",
+  "saul-cuts-2026-01-11-at-5-03-19-pm.webp",
+  "new-photos/new-hair-unit-photo.webp"
 ];
 
 const allMarqueeImages = [...marqueeImages, ...marqueeImages];
 
 const teamMembers = [
-  { name: "Groovy", role: "Owner / Master Barber", image: "/images/team/groovy.jpg" },
-  { name: "Larmont", role: "Master Barber", image: "/images/team/larmont.jpg" },
-  { name: "Saul", role: "Master Barber", image: "/images/team/saul.jpg" },
-  { name: "Norie", role: "Master Barber", image: "/images/team/norie.jpg" },
-  { name: "Ace", role: "Master Barber/SMP Artist", image: "/images/team/ace.jpg" },
-  { name: "Alyssa", role: "Master Barber/Cosmetologist", image: "/images/team/alyssa.jpg" },
-  { name: "Scotty", role: "Master Barber", image: "/images/team/scotty.jpg" },
-  { name: "Tyrone", role: "Master Barber", image: "/images/team/tyrone.jpg" }
+  { name: "Groovy", slug: "groovy", role: "Owner / Master Barber", image: "/images/team/groovy.webp" },
+  { name: "Larmont", slug: "larmont", role: "Master Barber", image: "/images/team/larmont.webp" },
+  { name: "Saul", slug: "saul", role: "Master Barber", image: "/images/team/saul.webp" },
+  { name: "Norie", slug: "norie", role: "Master Barber", image: "/images/team/norie.webp" },
+  { name: "Ace", slug: "ace", role: "Master Barber/SMP Artist", image: "/images/team/ace.webp" },
+  { name: "Alyssa", slug: "alyssa", role: "Master Barber/Cosmetologist", image: "/images/team/alyssa.webp" },
+  { name: "Scotty", slug: "scotty", role: "Master Barber", image: "/images/team/scotty.webp" },
+  { name: "Tyrone", slug: "tyrone", role: "Master Barber", image: "/images/team/tyrone.webp" }
 ];
 
 const BrandStory: React.FC = () => {
@@ -49,10 +50,12 @@ const BrandStory: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div
           className="relative group overflow-hidden cursor-pointer"
-          onClick={() => openLightbox(["/images/IMG_3606.jpg"], 0)}
+          onClick={() => openLightbox(["/images/img-3606.webp"], 0)}
         >
-          <img 
-            src="/images/IMG_3606.jpg" 
+          <img
+                  loading="lazy"
+                  decoding="async" 
+            src="/images/img-3606.webp" 
             alt="The Experience" 
             className="w-full aspect-[4/5] object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
           />
@@ -85,24 +88,39 @@ const BrandStory: React.FC = () => {
         <h2 className="text-4xl md:text-6xl font-heading text-[#C5A059] mb-12 md:mb-16 text-center">Meet the Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {teamMembers.map((member) => (
-            <div
-              key={member.name}
-              className="group relative cursor-pointer"
-              onClick={() => openLightbox([member.image], 0)}
-            >
-              <div className="aspect-[4/5] bg-neutral-900 overflow-hidden relative mb-4">
-                <img 
-                  src={member.image} 
+            <div key={member.name} className="group relative flex flex-col">
+              <Link
+                to={`/team#${member.slug}`}
+                aria-label={`See ${member.name}'s work`}
+                className="block aspect-[4/5] bg-neutral-900 overflow-hidden relative mb-4"
+              >
+                <img
+                  src={member.image}
                   alt={member.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop';
-                  }}
                 />
                 <div className="absolute inset-0 ring-1 ring-[#C5A059]/30 -m-2 transition-all duration-500 group-hover:m-0 pointer-events-none"></div>
-              </div>
+              </Link>
               <h3 className="text-xl font-heading text-white">{member.name}</h3>
-              <p className="text-[#C5A059] font-oswald text-xs uppercase tracking-widest">{member.role}</p>
+              <p className="text-[#C5A059] font-oswald text-xs uppercase tracking-widest mb-5">{member.role}</p>
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-[#C5A059] text-black px-4 py-3 font-oswald text-[11px] uppercase tracking-[0.15em] hover:bg-white transition-colors"
+                >
+                  Book with {member.name}
+                </a>
+                <Link
+                  to={`/team#${member.slug}`}
+                  className="flex-1 text-center border border-[#C5A059]/50 text-[#C5A059] px-4 py-3 font-oswald text-[11px] uppercase tracking-[0.15em] hover:bg-[#C5A059] hover:text-black transition-colors"
+                >
+                  See Their Work
+                </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -118,7 +136,9 @@ const BrandStory: React.FC = () => {
                 className="mx-4 w-[280px] md:w-[400px] flex-shrink-0 relative aspect-[4/5] overflow-hidden group cursor-pointer"
                 onClick={() => openLightbox(marqueeFullPaths, index % marqueeImages.length)}
               >
-                <img 
+                <img
+                  loading="lazy"
+                  decoding="async" 
                   src={`/images/${img}`} 
                   alt="Style" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
